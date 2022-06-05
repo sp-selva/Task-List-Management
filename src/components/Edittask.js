@@ -30,8 +30,11 @@ function Edittask() {
   return (
     <div className="container">
       <div className="row">
+        <h3 className="text-center mb-4 mt-5 text-uppercase">
+          <strong>Create Task</strong>
+        </h3>
         <form
-          className="col-md-6 mt-5 align-items-center justify-content-center flex-column edit_form"
+          className="col-md-6 mt-3 align-items-center justify-content-center flex-column edit_form"
           onSubmit={addTaskhandle}
         >
           <div className="row">
@@ -109,7 +112,7 @@ function Edittask() {
           </div>
         </form>
 
-        <div className="col-md-6 mar_0_auto mt-5">
+        <div className="col-md-6 mar_0_auto mt-2">
           {task.map((item, id) => (
             <div className="list_card" key={item.id}>
               <div className="text-start gap-3">

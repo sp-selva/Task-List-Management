@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
+function Login({setIsLogin}) {
 
-function Login() {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
 
   const adminLogin = {
-    email: "xyz@mail.com",
-    password: "123456",
+    email: "task@gmail.com",
+    password: "task@123",
   };
 
   const loginHandle = (e, details) => {
@@ -64,7 +64,6 @@ function Login() {
           </form>
         </div>
       </div>
-
     </div>
   );
 }

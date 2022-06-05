@@ -1,11 +1,10 @@
 import "./App.css";
-import Jokesspot from "./components/Jokesspot";
 import Login from "./components/Login";
 import Edittask from "./components/Edittask";
 import Viewtasks from "./components/Viewtasks";
+import Jokesspot from "./components/Jokesspot";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
-// import PrivateRouter from "./components/Router/PrivateRoute";
+import PrivateRouters from "./components/PrivateRoutes";
 
 function App() {
   return (
@@ -56,11 +55,11 @@ function App() {
 
         <Routes>
           <Route exact path="/" element={<Login />}></Route>
-          {/* <Route element={<PrivateRouter />}> */}
-            <Route exact path="/Edittask" element={<Edittask />}></Route>
-            <Route exact path="/Viewtasks" element={<Viewtasks />}></Route>
-            <Route exact path="/Jokesspot" element={<Jokesspot />}></Route>
-          {/* </Route> */}
+          <Route element={<PrivateRouters />}>
+            <Route path="/Edittask" element={<Edittask />}></Route>
+            <Route path="/Viewtasks" element={<Viewtasks />}></Route>
+            <Route path="/Jokesspot" element={<Jokesspot />}></Route>
+          </Route>
         </Routes>
       </div>
     </Router>

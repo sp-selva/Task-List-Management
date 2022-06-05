@@ -1,3 +1,52 @@
+# Project Details#
+
+# Task List Management
+
+This Project is a ReactJS Project which demonstrates the following
+
+Creating a Component in React
+Modify the Task
+Communicating between parent and child component
+Using Bootstrap along with React
+Using Basic Routing in React
+
+# Demo Login Credentials 
+Email : task@gmail.com
+Password : task@123
+
+# Live Application URL
+
+https://taskmangagement.netlify.app/
+
+This URL has the application deployed in
+
+# Technology Used to build this App
+
+Javascript, React-Redux, Redux  - Toolkit, Hooks, React Router, Bootrasp 5
+
+# Fonts
+
+Common Font : font-family: 'Poppins', sans-serif;
+
+For Comic Font : font-family: 'Atma', cursive;
+
+# Color Pattern
+
+For Background :     background: linear-gradient(to right, #8CA6DB, #B993D6);
+
+Font Color : #00000
+
+# Prerequisites
+
+Install Node JS
+
+Refer to https://nodejs.org/en/ to install nodejs
+
+Install create-react-app
+Install create-react-app npm package globally. This will help to easily run the project and also build the source files easily. Use the following command to install create-react-app
+
+npm install -g create-react-app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

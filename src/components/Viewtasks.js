@@ -11,6 +11,9 @@ function Viewtasks() {
 
   return (
     <div className="container mt-5">
+      <h3 className="text-center mb-4 mt-5 text-uppercase">
+        <strong>View Task</strong>
+      </h3>
       <div className="col-md-8 mar_0_auto">
         <div className="d-flex align-items-center justify-content-between">
           <div className="mb-3 col-md-3">
@@ -26,7 +29,7 @@ function Viewtasks() {
             />
           </div>
           <div className="mb-3 col-md-3">
-          <label className="form-label">Filter By Name</label>
+            <label className="form-label">Filter By Name</label>
             <input
               type="text"
               name=""

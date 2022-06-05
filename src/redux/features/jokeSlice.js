@@ -1,28 +1,31 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-export const getPosts = createAsyncThunk("joke/getPosts", async () => {
-  return fetch("https://jsonplaceholder.typicode.com/posts", {method: "GET"})
-  .then((res) =>  res.json());
+export const getJokes = createAsyncThunk("jokes/getJokes", async () => {
+  const response = await fetch(
+    "https://v2.jokeapi.dev/joke/any?format=json&blacklistFlags=nsfw,sexist&type=single&lang=EN&amount=10"
+  );
+  const formetedResponse = response.json();
+  return formetedResponse;
 });
 
-const jokeSlice = createSlice(({
-  name: "joke",
-  intialState: {
-    joke: [],
-    loading: false,
+export const jokeSlice = createSlice({
+  name: "jokes",
+  initialState: {
+    list: [],
+    isLodding: false,
   },
   extraReducers: {
-    [getPosts.pending]: (state, action) => {
-      state.loading = true;
+    [getJokes.pending]: (state) => {
+      state.isLodding = true;
     },
-    [getPosts.fulfilled]: (state, { payload }) => {
-      state.joke = payload;
-      state.loading = false;
+    [getJokes.fulfilled]: (state, action) => {
+      state.list = action.payload;
+      state.isLodding = false;
     },
-    [getPosts.rejected]: (state, action) => {
-      state.loading = false;
+    [getJokes.rejected]: (state) => {
+      state.isLodding = false;
     },
   },
-}));
+});
 
 export default jokeSlice.reducer;

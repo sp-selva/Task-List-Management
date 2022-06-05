@@ -2,32 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const taskSlice = createSlice({
   name: "task",
-  initialState: [
-    {
-      id: 1,
-      taskname: "ONE",
-      description: "One",
-      starttime: "10:55 PM",
-      endtime: "3:00 PM",
-      status:"Running"
-    },
-    {
-      id: 2,
-      taskname: "Two",
-      description: "Two",
-      starttime: "12:55 PM",
-      endtime: "4:00 PM",
-      status:"Expired"
-    },
-    {
-      id: 3,
-      taskname: "Three",
-      description: "Three",
-      starttime: "09:55 PM",
-      endtime: "5:00 PM",
-      status:"Scheduled"
-    },
-  ],
+  initialState: [],
 
   reducers: {
     addTask: (state, action) => {
