@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* For Comic font for Jokesspot */
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #8CA6DB, #B993D6);
+  color: #fff;
+}
+
+/* loginComp Start Here */
+.loginComp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  width: 100%;
+}
+
+.logincard {
+  padding: 40px;
+  background: #ffffff47;
+  border-radius: 5px;
+  margin-top: 130px;
+}
+
+/* loginComp End Here */
+
+
+/* Edit Task start here */
+.list_card {
+  background: #fff;
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list_card p {
+  margin: 0;
+  text-transform: capitalize;
+  color: #000;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.edit_form {
+  margin: 0 auto;
+  column-gap: 10px;
+  padding: 40px;
+  background: #ffffff47;
+  border-radius: 5px;
+  height: 50%;
+}
+
+.over_hi_scroll {
+  min-height: 500px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.mar_0_auto {
+  margin: 0 auto;
+}
+
+.rc-time-picker-panel-select li {
+  color: #000;
+}
+
+/* Edit Task end here */
+
+.nav-item a {
+  margin: 0 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.logo {
+  margin: 0;
+  color: #0d6efd !important;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 800;
+}
+
+.navbar-nav {
+  padding-left: 2rem;
+}
+
+.loadercss {
+  position: absolute;
+  top: 190px;
+  left: 40%;
+}
+
+.comic_font{
+  font-family: 'Atma', cursive;
+}
